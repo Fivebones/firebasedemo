@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<body class="teal lighten-2 container">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo Apoteke</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <h3 class="center-align card-panel">Add Pharmacies</h3>
+
+  <div class="content card-panel cointainer center-align input-field">
+    <ul id="list"></ul>
+    <form id="add-pharmacy">
+      <input type="text" name="name" placeholder="Name" />
+      <input type="text" name="address" placeholder="Address" />
+      <input type="text" name="city" placeholder="City" />
+      <button class="btn waves-effect waves-light" type="submit" name="action"> Add </button>
+    </form>
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: 'AIzaSyCnQ1yqdYS2dooKLZhIeE0oigrxIZYGcfA',
+      authDomain: 'fir-a599e.firebaseapp.com',
+      databaseURL: 'https://fir-a599e.firebaseio.com',
+      projectId: 'fir-a599e',
+      storageBucket: 'fir-a599e.appspot.com',
+      messagingSenderId: '941226616022',
+      appId: '1:941226616022:web:93d80bf28996a6973b9577',
+      measurementId: 'G-2KWPVHHNTF',
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

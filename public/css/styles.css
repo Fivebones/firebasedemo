@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+#list span {
+    display: block;
+    padding: 10px;
+}
+
+#list span:first-of-type {
+    font-size: 2rem;
+}
+
+#list li {
+    position: relative;
+    color: #5e5e5e;
+}
+
+#list li div {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#list li div {
+    cursor: pointer;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+#list li div:hover {
+    background-color: red;
+    transition: 0.2s ease-in;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
