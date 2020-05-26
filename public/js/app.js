@@ -1,6 +1,6 @@
 const pharmacyList = document.getElementById('list');
 const form = document.getElementById('add-pharmacy');
-const attributeSuffix = 'ph';
+const attributePrefix = 'ph';
 
 function displayPharmacies(doc) {
 
@@ -11,7 +11,7 @@ function displayPharmacies(doc) {
     let deleteBtn = document.createElement('div');
     let updateBtn = document.createElement('button');
 
-    li.setAttribute('data-id', attributeSuffix + doc.id);
+    li.setAttribute('data-id', attributePrefix + doc.id);
     li.classList.add('col', 's6', 'teal', 'lighten-2', 'card-panel');
     name.textContent = doc.data().name;
     address.textContent = doc.data().address;
